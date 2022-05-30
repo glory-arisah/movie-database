@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  color: #fff;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0.6rem;
+  row-gap: 2rem;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  justify-items: center;
+  place-content: center;
+  color: #fff;
+}
+.movie-card {
+  position: relative;
+  transition: transform 13s ease-in-out;
+}
+
+.movie__img {
+  max-width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.movie-title {
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: font-size 200ms ease-in-out;
+  color: rgb(246, 241, 241);
+}
+.movie-title:hover {
+  font-size: 1.25rem;
+  font-weight: 600;
+  /* color: rgb(122, 122, 122); */
+}
+
+.movie-overview {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: 65%;
+  margin-top: 0.7rem;
+  overflow: hidden;
+}
+
+.movie__img:hover {
+  transform: scale(1.05);
+}
+
+.movie-tag {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.movie-tag__btn {
+  font-size: 0.8rem;
+  padding: 4px;
+  margin: 2px;
+  background: #484849;
+  border: none;
+  border-radius: 4px;
+  color: rgb(236, 234, 234);
+  box-shadow: 1px 1px 2px #ababfe
+}
+
+.overview--detail {
+  text-align: left;
+  margin: 2rem auto;
+  width: 95%;
+  font-family: 'Tiro Devanagari Sanskrit', serif;
+  letter-spacing: 1px;
+}
+.overview--detail h2 {
+  margin-bottom: 0.6rem;
+}

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bentham&family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Bentham', serif;
+  color: #fff;
+}
+
+.header {
+  padding-block: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(220, 220, 220);
+  color:rgb(158, 155, 155)
+}
+
+.backdrop__img-container {
+  position: absolute;
+  z-index: -1;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.backdrop__img {
+  width: 100%;
+  max-width: 98%;
+  max-height: 30%;
+}
+
+.poster__img-container {
+  height: 18rem;
+  text-align: left;
+  margin-left: 0.4rem;
+  margin-top: 15rem;
+  padding-bottom: 1rem;
+}
+.poster__img {
+  height: 100%;
+}
